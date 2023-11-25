@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tienda</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Angular -->
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/ui-router.min.js"></script>
+    <script src="js/vendor/angular-resource.min.js"></script>
+
+    <!-- Script Angular  -->
+    <script src="app/app.js"></script>
+    <script src="app/controllers/categoriaController.js"></script>
+    <script src="app/controllers/subCategoriaController.js"></script>
+    <script src="app/filters/oracion.js"></script>
+</head>
+<body>
+<!-- Header -->
+<header class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" width="150px" />
+            </div>
+            <div class="col-md-8">
+                <h1>Bienvenido</h1>
+                <p>servicios informaticos </p>
+                <div class="header-social">
+                    <a href="">
+                        <i class="fa fa-facebook-official"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-google-plus-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- MegaMenu -->
+<nav class="container">
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a ui-sref="home" class="navbar-brand">Mi marca</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="admin">Administrador</a></li>
+                <li class="dropdown mega-dropdown row">
+                    <a ui-sref="#" class="dropdown-toggle" data-toggle="dropdown">servicios<spam class="caret"></spam></a>
+                    <ul class="dropdown-menu mega-dropdawn-menu">
+                        </li>
+                        <li class="col-md-4"><a ui-sref="hardware({categoria: 'procesadores'})">Computadoras</a></li>
+                        <li class="col-md-4"><a ui-sref="hardware({categoria: 'tarjetas-de-video'})">Potenciadores</a></li>
+                        <li class="col-md-4"><a ui-sref="hardware({categoria: 'tarjetas-madre'})">Accesorios</a></li>
+                      
+                        <li class="col-md-4 list">
+                        
+                
+                    </ul>
+                </li>
+                <li class="dropdown mega-dropdown row">
+            
+                </li>
+                <li class="dropdown mega-dropdown row">
+                    <a ui-sref="#" class="dropdown-toggle" data-toggle="dropdown">Soluciones<spam class="caret"></spam></a>
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li class="col-md-4"><a ui-sref="red({categoria: 'cableado-estructurado'})">Cableado estructurado</a></li>
+                        <li class="col-md-4"><a ui-sref="red({categoria: 'redes-inalambricas'})">Redes Inalámbricas</a></li>
+                        <li class="col-md-4"><a ui-sref="red({categoria: 'switches'})">Switches</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown mega-dropdown row">
+                    <a ui-sref="#" class="dropdown-toggle" data-toggle="dropdown">Innovacion<spam class="caret"></spam></a>
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li class="col-md-4"><a ui-sref="softw({categoria: 'microsoft-office'})">Microsoft Office</a></li>
+                        <li class="col-md-4"><a ui-sref="softw({categoria: 'antivirus'})">Antivirus</a></li>
+                        <li class="col-md-4"><a ui-sref="softw({categoria: 'adobe'})">Adobe</a></li>
+                    </ul>
+
+                <li class="dropdown mega-dropdown row">
+                
+                </li>
+                <li class="dropdown mega-dropdown row">
+                </li>
+                <li class="dropdown mega-dropdown row">
+                
+                    
+                    
+                </li>
+                <li><a ui-sref="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Megamenu Fin -->
+
+<div ui-view></div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center">CONTACTO</h3>
+            <div class="col-md-5 col-md-offset-2">
+                <h5>DIRECCIÓN</h5>
+                <p>Manizales Caldas</p>
+                <p>Desarrollamos nuevos modelos de negocio que nos permitan prestar servicios de Informatica por Master para nuestros clientes.</p>
+                <p>Manizales ManizalesHorario: 10:00 a 19:00</p>
+            </div>
+            <div class="col-md-4">
+                <h5>CONTACTO</h5>
+                <p><span class="glyphicon glyphicon-envelope"></span> Teléfono: 3193634416</p>
+                <p><span class="glyphicon glyphicon-earphone"></span> Email: Santiago.3802010498@ucaldas.edu.co</p>
+            </div>
+        </div>
+    <div>
+        <p class="text-center">
+            Soluciones adaptadas
+        </p>
+    </div>
+        <div class="row text-center">
+            <h5>REDES SOCIALES</h5>
+            <div class="footer-social">
+                <a href="">
+                    <i class="fa fa-facebook-official"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-twitter-square"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-google-plus-square"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <p class="text-center">&copy; Los profesionales</p>
+</footer> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script></script>
+</body>
+</html>

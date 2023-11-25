@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+footer{
+	background: #007196;
+	color: white;
+	margin-bottom: 0;
+	padding-bottom: 1em;
+}
+figcaption{
+	display: inline-block;
+}
+header{
+	padding-top: 3em;
+}
+h5{
+	font-weight: 600;
+}
+img{
+	padding: 1em;
+}
+.background-dark{
+	background: #E4E6FF;
+	padding: 2em 0;
+}
+.header-social .fa-facebook-official{
+	color: #193EC7;
+	font-size: 3em;
+	padding: 0 .2em;
+}
+.header-social .fa-twitter-square{
+	color: #138FCF;
+	font-size: 3em;
+	padding: 0 .2em;
+}
+.header-social .fa-google-plus-square{
+	color: #E51F1F;
+	font-size: 3em;
+	padding: 0 .2em;
+}
+.footer-social a>i{
+	color: white;
+	font-size: 3em;
+}
+.hide-list{
+	position: absolute;
+	background: #1097F6;
+	list-style: none;
+	z-index: 10;
+	width: 92%;
+	display: none;
+	padding-top: .5em 1em;
+	color: white;
+}
+.hide-list li:hover{
+	width: 100%;
+}
+.hide-list li:hover:after{
+	content: url("../img/star.png");
+}
+.hide-list li a{
+	color: white;
+	text-decoration:none;
+	padding: .6em;
+	display: inline-block;
+}
+.jumbotron{
+	margin-bottom: 0;
+}
+.list:hover .hide-list{
+	display: block;
+}
+.navbar{
+	margin-bottom: 0;
+}
+
+.mega-dropdown{
+	position: static !important;
+	padding-left: 2em; 
+}
+.mega-dropdown-menu{
+	padding: 20px;
+	width: 100%;
+	box-shadow: none;
+}
+.modal-dialog {
+  z-index: 1050;}
