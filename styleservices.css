@@ -1,0 +1,12 @@
+.container {
+    display: flex; /* Clearfix para contener los elementos flotantes */
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    float: left;
+    margin: 20px;
+     /* Establece el ancho al 50% para dos elementos al lado del otro */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}

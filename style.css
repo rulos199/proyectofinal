@@ -1,0 +1,282 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+/* Se importa familia de fuente desde google fonts para dar estilo al título del navbar*/
+
+h1{
+    /* Se da estilo a la fuente, cambiando color, alineando elemento con la propiedad de flexbox,
+    finalmente se hace uso de la fuente importada */
+    display: flex;
+     align-items: center;
+     color: #ffff;
+     font-family: 'Black Ops One', cursive;
+     padding-top: 5px;
+    }
+    
+
+.logo {
+    /* Se llama la clase logo para dar transparencia a la imagen insertada dentro del navbar */
+    opacity: 80%;
+    
+}
+
+.d-inlne-block{
+   border-radius: 20px; 
+}
+.banner {
+    /* Se llama a la clase banner que se refiere al container, 
+    para definir altura, imagen de fondo y alineación de elementos */
+    
+    width: 99%;
+    height: 450px;
+    background-image: url("img/big-data.jpg");
+    margin-top: 5px;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+   
+    }
+    
+
+
+.navbar {
+    /*Se dan estilos al Navbar específicamente coolor de fondo */
+    background:  linear-gradient(90deg, rgba(12,14,12,1) 31%, rgba(48,48,60,0.8869683615633753) 71%);
+    height: 7.5vh;
+}
+.logotipo-footer{
+    /*Se defienen altura, y porcentaje de opacidad del logotipo o imagen de la empresa*/
+    height: 80px;
+    width: 80px ;
+    opacity: 80%;
+    border-radius: 20px;
+    margin-left: 5px;
+    
+}
+.footer {
+    /*Se usa la propiedad de flexbox para alinear los containers definidos
+     dentro del container padre Footer*/
+    display:flex;
+    justify-content: space-between;
+
+   
+}
+.redes-sociales {
+    /*Se le da estilos de fondo de color, ancho y propiedades de alineación más el estilo del borde del
+    container hijo*/
+    background:linear-gradient(90deg, rgba(12,14,12,1) 31%, rgba(48,48,60,0.8869683615633753) 71%);
+    width:30%;
+    flex-direction: column;
+    margin: 40px;
+    border-radius: 10px;;
+}
+.info-empresa {
+    /*Se le da estilos de fondo de color, ancho y propiedades de alineación más el estilo del borde
+     del container hijo*/
+
+    background:linear-gradient(90deg, rgba(12,14,12,1) 31%, rgba(48,48,60,0.8869683615633753) 71%);
+    width:30%;
+    flex-direction: column;
+    margin: 40px;
+    border-radius: 10px;
+    display:flex;
+    align-items: flex-start;
+
+}
+.presentacion-empresa {
+    /*Se le dan estilos al párrafo, ajustándolo dentro del container
+     de la clase información de la empresa */
+
+    border-top:  #30303c;
+    border-style:double;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
+    text-align: justify;
+    font-size: x-small;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 200px;
+    color: #ffff;
+}
+.imagen {
+    /*Estilos de alineación para la imagen dentro del container de la información de la empresa.*/
+
+    display:flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.pagina {
+    /*Se llama a la clase página que correspnde al container
+     del body para aplicar estilo de color de fondo a la página*/
+ background: #30303c;
+}
+.derechos-reservados {
+    /*Se le da estilos de fondo de color, ancho y propiedades de alineación más el estilo del borde
+     del container hijo*/
+    background:linear-gradient(90deg, rgba(12,14,12,1) 31%, rgba(48,48,60,0.8869683615633753) 71%);
+    width:30%;
+    flex-direction: column;
+    margin: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.title-rs {
+    /*Se aplica estilos de alineación con la propiedad de flexbox, se da estilo de color a la 
+    fuente del título del container de derechos reservados*/
+    display: flex;
+    color: #ffff;
+    justify-content: star;
+    margin-left: 5px;
+}
+.wp {
+    /*Se le da estilos  de color de fuente, tamaño, alineación a la información de  de whatsapp
+     y margen con respecto al container hijo */
+    color: #ffff;
+    margin-left: 10px;
+    font-size: x-small;
+display: flex;
+justify-content: center;
+padding-top: 10px;    
+}
+.w {
+    /*Etilos aplicados al icono de whatsapp*/
+display: flex;
+flex-direction: row;
+height: 5vh;
+
+
+
+
+}
+.g {
+    /*Etilos aplicados al icono de gmail*/
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+}
+.gp {
+    /*Se le da estilos  de color de fuente, tamaño, alineación a la información de correo y margen
+     con respecto al container hijo */
+    color:  #ffff;
+    margin-left: 10px;
+display: flex;
+justify-content: center;
+font-size: x-small;   
+padding-top: 10px; 
+}
+.dr {
+    /*Se aplican estilos al parrafo ubicado dentor del container de derechos reservados */
+    color:  #ffff;
+    margin-left: 10px;
+display: flex;
+justify-content:start;
+font-size: x-small;
+margin-left: 10px;   
+padding: 10px; 
+}
+.dr2{
+ color:#ffff;
+ margin-bottom: 2px;
+ margin-right: 1px;
+ padding-left: 1px;
+ font-size: x-small;   
+}
+.img-cr {
+    /*Se dan estilos de color, alineación con propiedad flexbox, y alura a
+     mini container ubicado dentro del container de derchos resrvados */
+background: linear-gradient(90deg, rgba(12,14,12,1) 31%, rgba(48,48,60,0.8869683615633753) 71%);
+height: 30%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+
+}
+.pcr {
+    /*Estilos de alineación al container de la lase pcr */
+    display: flex;
+  justify-content: start;
+    height: 50%;
+    align-items: flex-end;
+}
+
+.pcr2{
+    display: flex;
+  justify-content: start;
+    height: 50%;
+    align-items: flex-end;
+}
+
+.iconos {
+    /*Se aplican estilo para quitar los puntos que hacen 
+    de viñetas en la parte izquierda de los iconos whatsapp y 
+    gmail, ya que se colocaron allí mediante la propiedad li */
+    list-style: none;
+}
+/*EN adelante son los estilos aplicados al formulario de contacto, tales como
+estilo de fuente, fondos y alineación empleando flexbox */
+#contact {
+
+	padding: 90px 0;
+	background:#2D3E40;
+}
+
+#contact h2 {
+    display: flex;
+    justify-content: center;
+	padding: 50px;
+    color:#2D3E40;
+}
+
+.contact-form {
+	background:linear-gradient(90deg, rgba(12,14,12,1) 31%, rgba(48,48,60,0.8869683615633753) 71%);
+	width: 50%;
+	margin: 20px auto;
+	padding: 70px 50px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px  #ffff;
+}
+
+.contact-form h5 {
+	text-align: center;
+	padding-bottom: 40px;
+	font-weight: 900;
+    color: #ffff;
+
+}
+
+.contact-form button {
+	width: 100%;
+
+}
+.form-group{
+    color: #ffff;
+}
+.label {
+    color: #ffff;
+}  
+
+
+
+.nav-link {
+    /*Se aplica color a la fuente de los nav links*/
+    color:#fff;
+}
+.carousel {
+    /*Se de altura al container del carrusel de imágenes de la página de ataques*/
+    height: 500px;
+}
+
+.d-block {
+    /*Se da estilo de altura y ancho a los container contenidos
+     en el carrusel de página de Ataques.*/
+    width: 500px;
+    height: 500px;
+}
+.banner {
+    /*Se aplica padding para establece una alineación agrdable de container 
+    de la clase banner ubicado en la pagina index */
+    padding: 0.5%;
+padding-left: 0.8%;
+}
